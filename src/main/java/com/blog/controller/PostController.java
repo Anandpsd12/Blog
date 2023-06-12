@@ -8,11 +8,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-
 import javax.validation.Valid;
 
-@RestController
-@RequestMapping("/api/posts")
+@RestController                          //@RestController help us to define web-services layer in our project.
+@RequestMapping("/api/posts")           //@RequestMapping maps form-url with controller method.
 public class PostController {
     
     private PostService postService;
